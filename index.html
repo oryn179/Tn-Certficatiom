@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TenaNet-CTF Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'hack-red': '#ff003c',
+              'hack-dark': '#0a0a0a',
+              'hack-panel': '#111111',
+            },
+            fontFamily: {
+              'cyber': ['Orbitron', 'sans-serif'],
+              'tech': ['Rajdhani', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glitch': 'glitch 1s linear infinite',
+            },
+            keyframes: {
+              glitch: {
+                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+                '62%': { transform: 'translate(0,0) skew(5deg)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        /* Default base styles */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ff003c;
+      }
+      
+      .light ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .light ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "jspdf": "https://esm.sh/jspdf@^3.0.4",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 text-gray-900 dark:bg-[#050505] dark:text-[#e5e5e5]">
+    <div id="root"></div>
+  </body>
+</html>
